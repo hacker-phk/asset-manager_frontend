@@ -10,7 +10,7 @@ function AddAsset() {
     e.preventDefault();
     const newAsset = { title, content, type };
     try {
-      await axios.post('http://localhost:5000/api/assets/add', newAsset);
+      await axios.post('https://backend-asserts-6.onrender.com/api/assets/add', newAsset);
       alert('Asset added successfully');
       setTitle('');
       setContent('');

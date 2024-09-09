@@ -10,7 +10,7 @@ function SearchAsset() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:5000/api/assets/search?query=${query}`);
+      const response = await axios.get(`https://backend-asserts-6.onrender.com/api/assets/search?query=${query}`);
       setResults(response.data);
     } catch (err) {
       alert('Error fetching assets');
